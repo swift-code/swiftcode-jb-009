@@ -23,7 +23,7 @@ public class RequestControllers extends Controller{
 
             }
     }
-    public Result acceptRequest(Long sid,Long rid){
+    public Result acceptRequest( Long rid){
         ConnectionRequest acceptRequest= ConnectionRequest.find.byId(rid);
         acceptRequest.status= ConnectionRequest.Status.ACCEPTED;
         ConnectionRequest.db().save(acceptRequest);
