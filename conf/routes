@@ -7,5 +7,5 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 POST    /login                      controllers.Application.login()
 POST    /signup                     controllers.Application.signup()
 GET     /profile/:id                controllers.HomeController.getProfile(id: Long)
-POST    /request/send/:sid/:rid     controllers.RequestController.sendRequest(id: Long,id: Long)
-POST    /accept/:rid                controllers.RequestController.acceptRequest(id: Long)
+POST    /request/send/:sid/:rid     controllers.RequestControllers.sendRequest(sid: Long,rid: Long)
+
